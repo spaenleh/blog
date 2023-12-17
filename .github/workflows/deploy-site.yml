@@ -2,9 +2,10 @@ name: Deploy Site to GitHub pages
 
 on:
   push:
-    branch: main
+    branches:
+     - main
 
-job:
+jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
@@ -15,8 +16,8 @@ job:
 
       - name: Build
         run: npx @11ty/eleventy
-        environment: |
-          URL = https://spaenleh.github.io/blog
+        env:
+          URL: https://spaenleh.github.io/blog
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
