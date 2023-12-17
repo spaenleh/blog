@@ -1,8 +1,7 @@
 module.exports = {
   url: process.env.URL || 'http://localhost:8080',
-  siteName: 'Eleventy Excellent',
-  siteDescription:
-    'Eleventy starter based on the workflow suggested by buildexcellentwebsit.es.',
+  siteName: "Spaenleh's Blog",
+  siteDescription: 'Personal blog of spaenleh',
   siteType: 'Person', // schema
   locale: 'en_EN',
   lang: 'en',
@@ -22,9 +21,9 @@ module.exports = {
   },
   blog: {
     // this is for the rss feed
-    name: 'My great Web Development Blog',
+    name: 'My blog about development, cooking,hiking and biking',
     description:
-      'Tell the word what you are writing about in your blog! It will show up on feed readers.'
+      'I am a Swiss web developer who likes to share what happens in my daily life.'
   },
   pagination: {
     itemsPerPage: 20
@@ -36,9 +35,9 @@ module.exports = {
     city: 'Ciudad',
     state: 'Estado',
     zip: '12345',
-    mobileDisplay: '+34 1234567',
-    mobileCall: ' +341234567',
-    email: 'hola@yoursite.com',
+    // mobileDisplay: '+34 1234567',
+    // mobileCall: ' +341234567',
+    email: 'spaenleh@gmail.com',
     cif: ''
   },
   menu: {
