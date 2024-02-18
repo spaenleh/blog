@@ -1,7 +1,7 @@
 ---
 permalink: /index.html
-title: ' Eleventy Excellent'
-description: 'Eleventy starter using modern CSS, fluid type, fluid spacing, flexible layout and progressive enhancement.'
+title: "Spaenleh"
+description: 'Welcome to my personal site. This is where I post random things about programming, photography and cooking.'
 layout: 'home'
 blog:
   title: 'Blog'

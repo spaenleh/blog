@@ -1,12 +1,12 @@
 {
-  "name": "eleventy-excellent",
-  "version": "1.6.4",
+  "name": "spaenleh-blog",
+  "version": "0.0.1",
   "description": "Eleventy starter based on the workflow suggested by Andy Bell's buildexcellentwebsit.es.",
-  "author": "Lene Saile",
+  "author": "Spaenleh",
   "license": "ISC",
   "main": ".eleventy.js",
   "engines": {
-    "node": ">=16.x.x"
+    "node": ">=20.x.x"
   },
   "scripts": {
     "clean": "rimraf dist",
@@ -18,7 +18,7 @@
   "keywords": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/madrilene/eleventy-excellent.git"
+    "url": "https://github.com/spaenleh/.github.git"
   },
   "dependencies": {
     "@11ty/eleventy": "^2.0.1",
