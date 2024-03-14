@@ -24,7 +24,7 @@ jobs:
           URL: https://spaenleh.github.io/blog
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
           name: blog
           path: dist
