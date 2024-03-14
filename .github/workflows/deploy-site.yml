@@ -26,7 +26,7 @@ jobs:
         run: pnpm install
 
       - name: Build
-        run: npx @11ty/eleventy
+        run: pnpm build
         env:
           URL: https://spaenleh.github.io/blog
 
