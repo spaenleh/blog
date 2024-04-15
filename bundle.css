@@ -92,7 +92,7 @@ textarea:not([rows]) {
 /* Custom font */
 @font-face {
   font-family: Grotesk;
-  src: url("/space-grotesk.ttf") format("truetype");
+  src: url("./space-grotesk.ttf") format("truetype");
   font-display: swap;
 }
 
