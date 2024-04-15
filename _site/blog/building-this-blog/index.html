@@ -1,0 +1,54 @@
+
+<!doctype html>
+<html lang=fr>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bundle.css">
+    <title>Genèse du blog</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href='/' class="home">Spaenleh</a>
+      </nav>
+    </header>
+    <hr/>
+    <div class="content">
+      
+<h1>Genèse du blog</h1>
+
+15 avril 2024
+<p>Ça faisait longtemps que je voulais créer mon propre blog.</p>
+<p>J'avais regardé pas mal de générateurs de sites statiques:</p>
+<ul>
+<li><a href="https://jekyllrb.com/">Jekyll</a>: le default sur GitHub Pages</li>
+<li><a href="https://www.gatsbyjs.com/">Gatsby</a>: souvent recommandé car il supporte les composants React et a des optimisations interessantes pour les images et médias, bonnes integrations avec les CMS</li>
+<li><a href="https://gohugo.io/">Hugo</a>: écrit en Go, il prétend être le plus rapide</li>
+<li><a href="https://vitepress.dev/">Vitepress</a>: fait à la base pour les sites de documentation, ils proposent une fonction de blog basée sur le bundler vite</li>
+<li><a href="https://www.getzola.org/">Zola</a>: écrit en rust, je l'ai testé et il m'a fallu de la persévérance pour comprendre la syntax de leur template engine. Bon par ailleurs</li>
+<li><a href="https://astro.build/">Astro</a>: le cool kid de cette dernière année. Je l'ai utilisé dans d'autres projet. Il est vraiment sympa pour travailler avec une stack hyper simple (HTML + CSS + JS) mais aussi très bonnes intégrations avec les frameworks tels que React, Svelte, Vue etc.</li>
+<li><a href="https://www.11ty.dev/">Eleventy</a>: ;-)</li>
+</ul>
+<p>Et j'avais déjà eu l'occasion par ailleurs de déployer des sites statiques sur GitHub Pages, qu'ils soient écrits à la main ou compilés via des frameworks.</p>
+<p>Mon choix s'est finalement orienté sur Eleventy, après avoir vu <a href="https://buildexcellentwebsit.es/">la video et les recommandations de Andy Bell</a> sur comment créer de bon sites web.</p>
+<h2>Rédaction du contenu</h2>
+<p>Les articles sont écrits en Markdown et ensuite transformés par <a href="https://www.11ty.dev/">Eleventy</a> qui est utilisé comme générateur de site static.</p>
+<p>J'ai créé un layout de base pour toutes les pages et un layout pour les pages de blog. lLes layouts utilisent l'engine de template Nunjuks.</p>
+<h2>Feuilles de style</h2>
+<p>J'ai ajouté un simple fichier <code>bundle.css</code> non minifié qui est simplement copié dans le dossier de destination.</p>
+<p>La font choisie est <a href="https://fonts.google.com/specimen/Space+Grotesk"><code>Space Grotesk</code></a> (une Google Font). Je l'include and le dossier de sortie du site pour ne pas dépendre du CDN Google.</p>
+<h2>Objectifs pour ce blog</h2>
+<p>Avec ce blog je voulais la stack la plus simple possible, pas d'options de plugin complex, simplement quelque chose où je peux écrire mon article, le commit sur git, et voilà envoyez c'est pesé. Je veux pouvoir consacrer le maximum de temps à la rédaction des articles et non pas au outils.</p>
+<p>J'ai l'impression que c'est le pari qu'eleventy fait. Je sais que je peux graduellement complexifier ma configuration pour faire de plus en plus de choses. le future dira si j'arrive à écrire régulièrement ici ou pas, ou si je vais changer de stack dans 2 semaines.</p>
+<p>J'espère que la lecture vous aura plu.</p>
+<div style="text-align: right">À la prochaine.</div>
+
+
+    </div>
+    <hr/>
+    <footer>
+      spaenleh
+    </footer>
+  </body>
+</html>

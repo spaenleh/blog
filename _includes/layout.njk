@@ -1,0 +1,29 @@
+---
+title: Spaenleh's Blog
+locale: fr
+---
+
+<!doctype html>
+<html lang={{locale}}>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/bundle.css">
+    <title>{{ title }}</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href='/' class="home">Spaenleh</a>
+      </nav>
+    </header>
+    <hr/>
+    <div class="content">
+      {{ content | safe }}
+    </div>
+    <hr/>
+    <footer>
+      spaenleh
+    </footer>
+  </body>
+</html>

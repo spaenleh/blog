@@ -1,0 +1,21 @@
+---
+layout: layout
+---
+
+<h1>Hello, je suis spaenleh</h1>
+<span> et bienvenue sur mon blog </span>
+
+<ul class="blog-list">
+  {% for post in collections.blog reversed %}
+  <li class="blog-card">
+    <a href="{{ post.url }}">
+      <h2>{{ post.data.title }}</h2>
+      {{ post.data.date | displayDate : locale }} {% for topic in
+      post.data.topics %}
+      <span class="blog-topic">#{{ topic }}</span>
+      {% endfor %}
+      <p>{{ post.data.description }}</p>
+    </a>
+  </li>
+  {% endfor %}
+</ul>
