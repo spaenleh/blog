@@ -3,8 +3,10 @@ layout: layout
 ---
 
 <h1>{{title}}</h1>
+<div>
 {% for topic in topics %}
 <span class="blog-topic">#{{topic}}</span>
 {% endfor %}
+</div>
 {{ page.date | displayDate: locale }}
 {{ content }}
