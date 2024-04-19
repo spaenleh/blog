@@ -1,7 +1,10 @@
 ---
+date: 2024-04-16
 title: Genèse du blog
 description: La naissance de ce blog
-published_at: 2024-04-15
+topics:
+  - web-dev
+  - personal-blog
 ---
 
 Ça faisait longtemps que je voulais créer mon propre blog.

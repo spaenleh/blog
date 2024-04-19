@@ -1,5 +1,6 @@
 ---
-title: Hello World
+date: 2024-04-15
+title: Hello 🌍
 description: Premier article de mon blog, j'y décris mes buts et ce que je veux obtenir de ce projet
 topics:
   - meta
