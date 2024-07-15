@@ -1,13 +1,14 @@
 ---
 layout: layout
+eleventyExcludeFromCollections: true
 ---
 
 <h1>Hello, je suis spaenleh</h1>
 <span>Bienvenue sur mon blog </span>
 
 <ul class="blog-list">
-  {% for post in collections.blog reversed %}
-  <li class="blog-card">
+  {% for post in collections.all reversed %}
+  <li class="card">
     <a href="{{ post.url }}">
       <h2>{{ post.data.title }}</h2>
       {{ post.data.date | displayDate : locale }} {% for topic in
@@ -16,6 +17,13 @@ layout: layout
       {% endfor %}
       <p>{{ post.data.description }}</p>
     </a>
+    <div class="article-type">
+      {% for tag in post.data.tags %} {% if tag == 'recette' %}
+      <span>🍴</span>
+      {% endif %}{% if tag == 'blog' %}
+      <span>💻</span>
+      {% endif %} {% endfor %}
+    </div>
   </li>
   {% endfor %}
 </ul>

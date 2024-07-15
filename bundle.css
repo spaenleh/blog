@@ -122,8 +122,17 @@ body {
 .navbar a {
   color: currentColor;
   text-decoration: none;
+}
+.navbar a.home {
   font-weight: 700;
   font-size: 1.5rem;
+}
+
+.navbar {
+  display: flex;
+  gap: 24px;
+  align-items: baseline;
+  flex-direction: rows;
 }
 
 hr {
@@ -157,26 +166,59 @@ a > code {
 ul.blog-list {
   padding-inline-start: 0px;
 }
-.blog-card a {
+.card a {
   text-decoration: none;
 }
-.blog-card h2 {
+.card h2 {
   margin-top: 0px;
 }
-li.blog-card {
+li.card {
   padding: 16px;
   margin-bottom: 16px;
   list-style-type: none;
   list-style-position: outside;
   border: 1px solid var(--main-color);
   border-radius: 4px;
+  /* allow to position the article-type in absolute */
+  position: relative;
 }
-li.blog-card:hover {
+li.card:hover {
   background-color: rgba(0, 0, 0, 0.1);
+  /* to make the image more transparent and blend it with the rest */
+  opacity: 80%;
+  /* subtle movement  */
+  transform: translateY(-3px) scale(1.02);
+}
+li.card {
+  transition: all 250ms ease-in-out;
+}
+
+.article-type {
+  position: absolute;
+  top: 16px;
+  right: 16px;
 }
 
 .blog-topic {
   font-size: 0.9rem;
   font-style: italic;
   opacity: 0.6;
+}
+
+.direct-link {
+  visibility: hidden;
+  text-decoration: none;
+  color: inherit;
+  opacity: 0.5;
+}
+
+h1:hover .direct-link,
+h2:hover .direct-link,
+h3:hover .direct-link,
+h4:hover .direct-link {
+  visibility: unset;
+}
+
+img {
+  border-radius: 8px;
 }

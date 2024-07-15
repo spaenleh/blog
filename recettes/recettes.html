@@ -1,0 +1,21 @@
+---
+layout: collection.njk
+eleventyExcludeFromCollections: true
+title: Recettes
+description: Mes recettes
+---
+
+<ul class="blog-list">
+  {% for collection in collections.recette reversed %}
+
+  <li class="card recette">
+    <a href="{{collection.page.url}}">
+      <h2>{{collection.data.title}}</h2>
+      {{ collection.data.date | displayDate : locale }}
+      <img class="recette-thumb" src="{{collection.data.thumbnail}}" />
+      <p>{{collection.data.description}}</p>
+    </a>
+  </li>
+
+  {% endfor %}
+</ul>
