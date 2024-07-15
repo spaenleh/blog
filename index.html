@@ -8,22 +8,24 @@ eleventyExcludeFromCollections: true
 
 <ul class="blog-list">
   {% for post in collections.all reversed %}
-  <li class="card">
-    <a href="{{ post.url }}">
-      <h2>{{ post.data.title }}</h2>
-      {{ post.data.date | displayDate : locale }} {% for topic in
-      post.data.topics %}
-      <span class="blog-topic">#{{ topic }}</span>
-      {% endfor %}
-      <p>{{ post.data.description }}</p>
-    </a>
-    <div class="article-type">
-      {% for tag in post.data.tags %} {% if tag == 'recette' %}
-      <span>🍴</span>
-      {% endif %}{% if tag == 'blog' %}
-      <span>💻</span>
-      {% endif %} {% endfor %}
-    </div>
-  </li>
+  <a class="card" href="{{ post.url }}">
+    <li class="card">
+      <div>
+        <h2>{{ post.data.title }}</h2>
+        {{ post.data.date | displayDate : locale }} {% for topic in
+        post.data.topics %}
+        <span class="blog-topic">#{{ topic }}</span>
+        {% endfor %}
+        <p>{{ post.data.description }}</p>
+      </div>
+      <div class="article-type">
+        {% for tag in post.data.tags %} {% if tag == 'recette' %}
+        <span>🍴</span>
+        {% endif %}{% if tag == 'blog' %}
+        <span>💻</span>
+        {% endif %} {% endfor %}
+      </div>
+    </li>
+  </a>
   {% endfor %}
 </ul>

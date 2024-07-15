@@ -9,13 +9,15 @@ description: Les articles ci-dessous se concentrent sur des sujets reliés
 <ul class="blog-list">
   {% for collection in collections.blog reversed %}
 
-  <li class="card">
-    <a href="{{collection.page.url}}">
-      <h2>{{collection.data.title}}</h2>
-      {{ collection.data.date | displayDate : locale }}
-      <p>{{collection.data.description}}</p>
-    </a>
-  </li>
+  <a class="card" href="{{collection.page.url}}">
+    <li class="card">
+      <div>
+        <h2>{{collection.data.title}}</h2>
+        {{ collection.data.date | displayDate : locale }}
+        <p>{{collection.data.description}}</p>
+      </div>
+    </li>
+  </a>
 
   {% endfor %}
 </ul>

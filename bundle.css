@@ -166,8 +166,9 @@ a > code {
 ul.blog-list {
   padding-inline-start: 0px;
 }
-.card a {
+a.card {
   text-decoration: none;
+  color: inherit;
 }
 .card h2 {
   margin-top: 0px;

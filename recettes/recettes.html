@@ -8,14 +8,18 @@ description: Mes recettes
 <ul class="blog-list">
   {% for collection in collections.recette reversed %}
 
-  <li class="card recette">
-    <a href="{{collection.page.url}}">
-      <h2>{{collection.data.title}}</h2>
-      {{ collection.data.date | displayDate : locale }}
-      <img class="recette-thumb" src="{{collection.data.thumbnail}}" />
-      <p>{{collection.data.description}}</p>
-    </a>
-  </li>
+  <a class="card" href="{{collection.page.url}}">
+    <li class="card recette">
+      <div>
+        <h2>{{collection.data.title}}</h2>
+        <span> {{ collection.data.date | displayDate : locale }} </span>
+        {% if collection.data.thumbnail %}
+        <img class="recette-thumb" src="{{collection.data.thumbnail}}" />
+        {% endif %}
+        <p>{{collection.data.description}}</p>
+      </div>
+    </li>
+  </a>
 
   {% endfor %}
 </ul>

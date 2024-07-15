@@ -1,8 +1,8 @@
 ---
 date: 2024-07-15
 title: Pâte à pizza
-description: Rien de mieux qu'une pâte à pizza maison sublimer un samedi soir.
-topic:
+description: Rien de mieux qu'une pâte à pizza maison pour sublimer un samedi soir.
+topics:
   - pâtes
   - bases
 ---
