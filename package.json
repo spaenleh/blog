@@ -1,7 +1,7 @@
 {
   "name": "11ty-blog",
   "version": "1.0.0",
-  "description": "",
+  "description": "My personal blog. Where I write about tech and cooking.",
   "main": "index.js",
   "scripts": {
     "build": "eleventy",
